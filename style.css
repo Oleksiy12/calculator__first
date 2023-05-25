@@ -1,22 +1,59 @@
 button{
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    border: none;
-    margin: 0 auto;
-    font-size: 2vh;
+   width: 60px;
+   height: 60px;
+   border-radius: 60px;
+   border: none;
+   font-size: 25px;
 }
 
 #zero{
-    width: 110px;
-    height: 50px;
-    border-radius: 50px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    padding-left: 20px;
+    padding-left: 21px;
+    width: 160px;
+    height: 60px;
+    border-radius: 60px;
+    grid-column: span 2;
+
 }
 
+#firstBlock{
+    width: 100%;
+    height: 1000px;
+    background-color: white;
+}
+
+#secondBlock{
+    display: block;
+    width: 400px;
+    height: 800px;
+    background-color: black;
+    border-radius: 10px;
+    margin: 30px auto;
+}
+
+#resultBlock{
+    display: flex;
+    height: 300px;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+#resultNumber{
+    color: white;
+    font-size: 70px;
+    margin-right: 20px;
+}
+
+#buttonBlock{
+    height: 500px;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+/* Цвет кнопок + hover */
 .num {
     color:white;
     background-color: #2e2a2a;
@@ -42,39 +79,94 @@ button{
     background-color: #ffae3b;
 }
 
-#firstBlock{
-    display: flex;
-    width: 100%;
-    height: 80vh;
-    background-color: white;
-}
+  @media screen and (max-width: 420px) {
+    #secondBlock{
+        display: block;
+        width: 150px;
+        height: 300px;
+        background-color: black;
+        border-radius: 10px;
+        margin: 30px auto;
+    }
+    button{
+        width: 25px;
+        height: 25px;
+        border-radius: 25px;
+        border: none;
+        font-size: 10px;
+     }
+     #zero{
+        width: 65px;
+        height: 25px;
+        grid-column: span 2;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        border-radius: 25px;
+        padding-left: 10px;
+    }
+    #resultNumber{
+        color: white;
+        font-size: 25px;
+        margin-right: 5px;
+    }
+    #buttonBlock{
+        height: 210px;
+        display: grid;
+        justify-items: center;
+        grid-template-columns: repeat(4, 1fr);
+    }
+    #resultBlock{
+        display: flex;
+        height: 100px;
+        align-items: flex-end;
+        justify-content: flex-end;
+    }
+  }
 
-#secondBlock{
-    display: block;
-    align-items: center;
-    width: 25vh;
-    height: 50vh;
-    background-color: black;
-    border-radius: 3vh;
-    margin: 15vh auto;
-}
-
-#resultBlock{
-    display: flex;
-    justify-content: right;
-    align-items: end;
-    height: 30%;
-}
-
-#resultNumber{
-    color: white;
-    font-size: 4vh;
-    margin-right: 2vh;
-}
-
-#buttonBlock{
-    height: 70%;
-    display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-}
+  
+  @media screen and (min-width: 421px) and (max-width: 768px) {
+    #secondBlock{
+        display: block;
+        width: 250px;
+        height: 500px;
+        background-color: black;
+        border-radius: 10px;
+        margin: 30px auto;
+    }
+    button{
+        width: 50px;
+        height: 50px;
+        border-radius: 50px;
+        border: none;
+        font-size: 20px;
+     }
+     #zero{
+        width: 110px;
+        height: 50px;
+        grid-column: span 2;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        border-radius: 50px;
+        padding-left: 17px;
+    }
+    #resultNumber{
+        color: white;
+        font-size: 40px;
+        margin-right: 10px;
+    }
+    #buttonBlock{
+        height: 300px;
+        display: grid;
+        justify-items: center;
+        grid-template-columns: repeat(4, 1fr);
+    }
+    #resultBlock{
+        display: flex;
+        height: 200px;
+        align-items: flex-end;
+        justify-content: flex-end;
+    }
+  }
+  
