@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "mathjs": "^11.8.0"
+  },
+  "name": "calculator__first",
+  "version": "1.0.0",
+  "main": "button.js",
+  "devDependencies": {},
+  "scripts": {
+   "start": "node button.js"
+  },
+  "author": "Mavryn",
+  "license": "ISC",
+  "description": ""
+}
