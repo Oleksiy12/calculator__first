@@ -10,11 +10,9 @@ let buttonHandler = function(){
         resultNumber.textContent = resultDisplay;
     } else if (value === "="){
         if (resultDisplay.includes("+") || resultDisplay.includes("-") || resultDisplay.includes("*") || resultDisplay.includes("/")) {
-            let result = eval(resultDisplay);
-            resultNumber.textContent = result; 
-            resultDisplay = result.toString();
-            resultDisplay = "";
-        }
+            let result = eval(resultDisplay); 
+            resultNumber.textContent = result;
+        } 
     } else {
         if(resultDisplay.length < 10){
             resultDisplay+=value;
@@ -22,7 +20,6 @@ let buttonHandler = function(){
     }
     }
 } 
-
     for (let i = 0; i < buttonValue.length; i+=1){
     buttonValue[i].addEventListener("click", buttonHandler);
 }
