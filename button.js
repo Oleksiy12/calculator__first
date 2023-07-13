@@ -21,7 +21,7 @@ let buttonHandler = function(){
                 return;
             }
                 resultDisplay+=value;
-                resultNumber.textContent = resultDisplay;
+                resultNumber.textContent = resultDisplay; 
     } 
     }    
 } 
